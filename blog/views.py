@@ -10,7 +10,7 @@ def new(request):
     yres = request.GET.get('yres')
     xres=int(xres)
     yres=int(yres)
-    imglist=os.listdir('./blog/static')
+    imglist=os.listdir('./mysite/static')
 
     return render(request, 'blog/new.html', {'xres':xres, 'yres':yres, 'imglist':imglist})
 

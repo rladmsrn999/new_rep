@@ -4,9 +4,10 @@
 
 <h1>new page!</h1>
 
-
-<img src="/static/image1.png" alt="image1">
-<p><cite>image1</cite></p>
+{% for image in imglist %}
+<img src="/static/{{image}}" alt="image1" width="{{xres}}" height="{{yres}}">
+<p><cite>{{image}}</cite></p>
+{% endfor %}
 
 <a href="{% url 'home' %}">home</a>
 

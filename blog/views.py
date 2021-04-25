@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from PIL import Image
+import os
+
 
 def home(request):
     return render(request, 'blog/home.html')
@@ -9,5 +10,7 @@ def new(request):
     yres = request.GET.get('yres')
     xres=int(xres)
     yres=int(yres)
+    imglist=os.listdir('E:\\python\\django\\blog\\static')
 
-    return render(request, 'blog/new.html', {'xres':xres, 'yres':yres})
+    return render(request, 'blog/new.html', {'xres':xres, 'yres':yres, 'imglist':imglist})
+

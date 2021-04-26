@@ -11,7 +11,7 @@ def new(request):
     yres = request.GET.get('yres')
     xres=int(xres)
     yres=int(yres)
-    imglist=os.listdir('/home/rladmsrn999/new_rep/blog/static/origianal')  #호스팅용
+    imglist=os.listdir('/home/rladmsrn999/new_rep/blog/static/original')  #호스팅용
     # imglist = os.listdir('./static/original')  #로컬용
     # imglist = imglist.sort()
 

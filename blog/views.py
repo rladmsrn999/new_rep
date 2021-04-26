@@ -13,7 +13,7 @@ def new(request):
     yres=int(yres)
     imglist=os.listdir('/home/rladmsrn999/new_rep/blog/static/original')  #호스팅용
     # imglist = os.listdir('./static/original')  #로컬용
-    imglist.sort()
+
 
     for img in imglist:
         image=Image.open('/home/rladmsrn999/new_rep/blog/static/original/{}'.format(img))
@@ -21,6 +21,7 @@ def new(request):
         img_resize.save('/home/rladmsrn999/new_rep/blog/static/make/{}'.format(img))
 
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
+    imglist.sort()
 
 
 

@@ -15,12 +15,12 @@ def new(request):
     # imglist = os.listdir('./static/original')  #로컬용
     # imglist = imglist.sort()
 
-    # for img in imglist:
-    #     image=Image.open('/home/rladmsrn999/new_rep/blog/static/original/{}'.format(img))
-    #     img_resize=image.resize((xres,yres))
-    #     img_resize.save('/home/rladmsrn999/new_rep/blog/static/make/{}'.format(img))
-    #
-    # imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
+    for img in imglist:
+        image=Image.open('/home/rladmsrn999/new_rep/blog/static/original/{}'.format(img))
+        img_resize=image.resize((xres,yres))
+        img_resize.save('/home/rladmsrn999/new_rep/blog/static/make/{}'.format(img))
+
+    imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
 
 
 

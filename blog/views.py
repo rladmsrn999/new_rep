@@ -27,7 +27,7 @@ def new(request):
         for y in range(yres) :
             if x>int(xres/2) :
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW1.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW11.png')
 
 
     im = image.load()
@@ -35,7 +35,7 @@ def new(request):
         for y in range(yres) :
             if y>int(yres/2) :
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW2.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW21.png')
 
     im = image.load()
     for x in range(xres) :
@@ -44,7 +44,7 @@ def new(request):
                 im[x,y]=(255,255,255)
             elif x%2==1 and y>=int(yres/2):
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-Vstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-Vstripe1.png')
 
     im = image.load()
     for x in range(xres) :
@@ -53,21 +53,21 @@ def new(request):
                 im[x,y]=(255,255,255)
             elif y%2==1 and x>=int(xres/2):
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-hstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-hstripe1.png')
 
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if y % 2 == 0:
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Hstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Hstripe1.png')
 
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if x% 2 == 0:
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Vstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Vstripe1.png')
 
     im = image.load()
     for x in range(xres):

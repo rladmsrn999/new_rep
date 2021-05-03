@@ -137,6 +137,29 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk8.png')
 
+    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    im = image.load()
+    for x in range(xres):
+        for y in range(yres):
+            if x==xres/4 or x==xres/2 or x==xres*3/4 :
+                im[x-3, y] = (255, 255, 255)
+                im[x-2, y] = (255, 255, 255)
+                im[x-1, y] = (255, 255, 255)
+                im[x, y] = (255, 255, 255)
+                im[x+1, y] = (255, 255, 255)
+                im[x+2, y] = (255, 255, 255)
+                im[x+3, y] = (255, 255, 255)
+            if y==yres/4 or y==yres/2 or y==yres*3/4 :
+                im[x, y-3] = (255, 255, 255)
+                im[x, y-2] = (255, 255, 255)
+                im[x, y-1] = (255, 255, 255)
+                im[x, y] = (255, 255, 255)
+                im[x, y+1] = (255, 255, 255)
+                im[x, y+2] = (255, 255, 255)
+                im[x, y+3] = (255, 255, 255)
+
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/LUCU.png')
+
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
     imglist.sort()
 

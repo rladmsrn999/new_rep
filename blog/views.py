@@ -27,7 +27,7 @@ def new(request):
         for y in range(yres) :
             if x>int(xres/2) :
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW11.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/BW111.png')
 
 
     im = image.load()

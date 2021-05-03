@@ -73,68 +73,68 @@ def new(request):
                 im[x, y] = (255, 255, 255)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Vstripe.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (x > int(xres*7/18) and x < int(xres*13/18)) and (y<int(yres/3) or y>int(yres*2/3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk1.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (x > int(xres * 11 / 18) and x < int(xres * 17 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk2.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (x > int(xres * 5 / 18) and x < int(xres * 11 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk3.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (x > int(xres * 1 / 18) and x < int(xres * 7 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk4.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (y > int(yres * 7 / 18) and y < int(yres * 13 / 18)) and (x< int(xres / 3) or y > int(xres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk5.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (y > int(yres * 11 / 18) and y < int(yres * 17 / 18)) and (x < int(xres / 3) or y > int(xres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk6.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (y > int(yres * 5 / 18) and y < int(yres * 11 / 18)) and (x< int(xres / 3) or x > int(xres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk7.png')
 
-    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    image = Image.new("RGB", (xres, yres), (255, 255, 255))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
             if (x > int(xres * 1 / 18) and x < int(xres * 7 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
-                im[x, y] = (255, 255, 255)
+                im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk8.png')
 
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')

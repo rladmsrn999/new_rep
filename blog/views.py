@@ -173,7 +173,7 @@ def new(request):
     for x in range(xres):
         for y in range(yres):
             # if x >= xres / 2 - xres *5/20  and x < xres / 2 + xres *5/20 and y >= yres / 2 - yres *5/20 and y < yres / 2 + yres *5/20:
-            #     im[x, y] = (255, 255, 255)
+                im[x, y] = (255, 255, 255)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading25%.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))

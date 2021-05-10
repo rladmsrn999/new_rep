@@ -166,7 +166,7 @@ def new(request):
         for y in range(yres):
             if x>=xres/2-xres*7/20 and x<xres/2+xres*7/20  and y>=yres/2-yres*7/20  and y<yres/2+yres*7/20  :
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading49%.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading49.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
@@ -174,7 +174,7 @@ def new(request):
         for y in range(yres):
             # if x >= xres / 2 - xres *5/20  and x < xres / 2 + xres *5/20 and y >= yres / 2 - yres *5/20 and y < yres / 2 + yres *5/20:
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading25%.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading25.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
@@ -182,7 +182,7 @@ def new(request):
         for y in range(yres):
             if x >= xres / 2 - xres *3/20 and x < xres / 2 + xres *3/20 and y >= yres / 2 - yres *3/20 and y < yres / 2 + yres *3/20:
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading9%.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading9.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
@@ -190,7 +190,7 @@ def new(request):
         for y in range(yres):
             if x >= xres / 2 - xres *1/20 and x < xres / 2 + xres *1/20 and y >= yres / 2 - yres *1/20 and y < yres / 2 + yres *1/20:
                 im[x, y] = (255, 255, 255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading1%.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading1.png')
 
 
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')

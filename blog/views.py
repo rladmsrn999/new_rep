@@ -73,7 +73,7 @@ def new(request):
                 im[x, y] = (255, 255, 255)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Vstripe.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -81,7 +81,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk1.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -89,7 +89,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk2.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -97,7 +97,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk3.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -105,7 +105,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk4.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -113,7 +113,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk5.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -121,7 +121,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk6.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -129,7 +129,7 @@ def new(request):
                 im[x, y] = (0, 0, 0)
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk7.png')
 
-    image = Image.new("RGB", (xres, yres), (255, 255, 255))
+    image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
@@ -159,6 +159,39 @@ def new(request):
                 im[x, y+3] = (255, 255, 255)
 
     image.save('/home/rladmsrn999/new_rep/blog/static/make/LUCU.png')
+
+    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    im = image.load()
+    for x in range(xres):
+        for y in range(yres):
+            if x>=xres/2-xres*7/20 and x<xres/2+xres*7/20  and y>=yres/2-yres*7/20  and y<yres/2+yres*7/20  :
+                im[x, y] = (255, 255, 255)
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading49%.png')
+
+    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    im = image.load()
+    for x in range(xres):
+        for y in range(yres):
+            if x >= xres / 2 - xres *5/20  and x < xres / 2 + xres *5/20 and y >= yres / 2 - yres *5/20 and y < yres / 2 + yres *5/20:
+                im[x, y] = (255, 255, 255)
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading25%.png')
+
+    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    im = image.load()
+    for x in range(xres):
+        for y in range(yres):
+            if x >= xres / 2 - xres *3/20 and x < xres / 2 + xres *3/20 and y >= yres / 2 - yres *3/20 and y < yres / 2 + yres *3/20:
+                im[x, y] = (255, 255, 255)
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading9%.png')
+
+    image = Image.new("RGB", (xres, yres), (0, 0, 0))
+    im = image.load()
+    for x in range(xres):
+        for y in range(yres):
+            if x >= xres / 2 - xres *1/20 and x < xres / 2 + xres *1/20 and y >= yres / 2 - yres *1/20 and y < yres / 2 + yres *1/20:
+                im[x, y] = (255, 255, 255)
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading1%.png')
+
 
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
     imglist.sort()

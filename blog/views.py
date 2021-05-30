@@ -216,12 +216,9 @@ def new(request):
 
 def download(request):
     url = '\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip.zip'
-
     if os.path.exists(url):
         with open(url, 'rb') as fh:
-            quote_url = urllib.parse.quote(notice.filename.encode('utf-8'))
             response = HttpResponse(fh.read(), content_type=mimetypes.guess_type(url)[0])
-            response['Content-Disposition'] = 'attachment;filename*=UTF-8\'\'%s' % quote_url
             return response
 
 

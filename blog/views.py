@@ -15,7 +15,7 @@ def new(request):
     yres = request.GET.get('yres')
     xres=int(xres)
     yres=int(yres)
-    imglist=os.listdir('/home/rladmsrn999/new_rep/blog/static/original')  #호스팅용
+    imglist=[img for img in os.listdir('/home/rladmsrn999/new_rep/blog/static/original') if img.endswith('.png')]  #호스팅용
     # imglist = os.listdir('./static/original')  #로컬용
 
 
@@ -200,15 +200,14 @@ def new(request):
     imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
     imglist.sort()
 
-    imgzip = zipfile.ZipFile('/home/rladmsrn999/new_rep/blog/static/make/imgzip.zip', 'w')
+    imgzip = zipfile.ZipFile('home/rladmsrn999/new_rep/blog/static/make/imgzip1.zip', 'w')
 
-    for folder, subfolders, files in os.walk('/home/rladmsrn999/new_rep/blog/static/original'):
-
+    for folder, subfolders, files in os.walk('home/rladmsrn999/new_rep/blog/static/original'):
         for file in files:
             if file.endswith('.png'):
                 imgzip.write(os.path.join(folder, file),
                                   os.path.relpath(os.path.join(folder, file),
-                                                  '/home/rladmsrn999/new_rep/blog/static/original'),
+                                                  'home/rladmsrn999/new_rep/blog/static/original'),
                                   compress_type=zipfile.ZIP_DEFLATED)
 
     imgzip.close()
@@ -217,7 +216,7 @@ def new(request):
 
 
 def download(request):
-    url = '\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip.zip'
+    url = '\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip1.zip'
     if os.path.exists(url):
         with open(url, 'rb') as fh:
             response = HttpResponse(fh.read(), content_type=mimetypes.guess_type(url)[0])

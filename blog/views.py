@@ -216,7 +216,7 @@ def new(request):
 
 
 def download(request):
-    url = '\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip1.zip'
+    url = '\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip.zip'
     if os.path.exists(url):
         with open(url, 'rb') as fh:
             response = HttpResponse(fh.read(), content_type=mimetypes.guess_type(url)[0])

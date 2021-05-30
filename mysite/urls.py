@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blog.views.home, name='home'),
     path('new/', blog.views.new, name='new'),
+    path('imgzip/', blog.views.download, name="imgzip"),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

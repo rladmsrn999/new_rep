@@ -4,15 +4,15 @@
 
 <h1>new page!</h1>
 
-{% for image in imglist %}
-<img src="/static/make/{{image}}" alt="image1" width="{{xres}}" height="{{yres}}">
-<p><cite>{{image}}</cite></p>
-{% endfor %}
-
 <div>
     <span>이미지 통합 다운로드 :&nbsp;</span>
     <a href="{% url 'imgzip' %}" >download</a>
 </div>
+
+{% for image in imglist %}
+<img src="/static/make/{{image}}" alt="image1" width="{{xres}}" height="{{yres}}">
+<p><cite>{{image}}</cite></p>
+{% endfor %}
 
 <a href="{% url 'home' %}">home</a>
 

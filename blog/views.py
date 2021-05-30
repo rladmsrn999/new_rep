@@ -208,7 +208,7 @@ def new(request):
                                   os.path.relpath(os.path.join(folder, file), '\\home\\rladmsrn999\\new_rep\\blog\\static\\original'),
                                   compress_type=zipfile.ZIP_DEFLATED)
 
-    fantasy_zip.close()
+    imgzip.close()
 
 
     return render(request, 'blog/new.html', {'xres':xres, 'yres':yres, 'imglist':imglist})

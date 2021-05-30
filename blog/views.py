@@ -197,17 +197,17 @@ def new(request):
     image.save('/home/rladmsrn999/new_rep/blog/static/make/Loading1.png')
 
 
-    imglist = os.listdir('/home/rladmsrn999/new_rep/blog/static/make')
+    imglist=[img for img in os.listdir('/home/rladmsrn999/new_rep/blog/static/make') if img.endswith('.png')]
     imglist.sort()
 
-    imgzip = zipfile.ZipFile('home/rladmsrn999/new_rep/blog/static/make/imgzip1.zip', 'w')
+    imgzip = zipfile.ZipFile('/home/rladmsrn999/new_rep/blog/static/make/imgzip1.zip', 'w')
 
-    for folder, subfolders, files in os.walk('home/rladmsrn999/new_rep/blog/static/original'):
+    for folder, subfolders, files in os.walk('/home/rladmsrn999/new_rep/blog/static/original'):
         for file in files:
             if file.endswith('.png'):
                 imgzip.write(os.path.join(folder, file),
                                   os.path.relpath(os.path.join(folder, file),
-                                                  'home/rladmsrn999/new_rep/blog/static/original'),
+                                                  '/home/rladmsrn999/new_rep/blog/static/original'),
                                   compress_type=zipfile.ZIP_DEFLATED)
 
     imgzip.close()

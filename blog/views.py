@@ -211,7 +211,7 @@ def new(request):
 
     imgzip.close()
 
-    return render(request, 'blog/new.html', {'xres':xres, 'yres':yres, 'imglist':imglist})
+    return render(request, 'blog/new.html', {'xres':xres, 'yres':yres, 'imglist':imglist, 'imgzip':imgzip})
 
 
 def download(request):

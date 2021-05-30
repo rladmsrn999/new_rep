@@ -203,10 +203,12 @@ def new(request):
     imgzip = zipfile.ZipFile('\\home\\rladmsrn999\\new_rep\\blog\\static\\make\\imgzip.zip', 'w')
 
     for folder, subfolders, files in os.walk('\\home\\rladmsrn999\\new_rep\\blog\\static\\original'):
+
         for file in files:
             if file.endswith('.png'):
                 imgzip.write(os.path.join(folder, file),
-                                  os.path.relpath(os.path.join(folder, file), '\\home\\rladmsrn999\\new_rep\\blog\\static\\original'),
+                                  os.path.relpath(os.path.join(folder, file),
+                                                  '\\home\\rladmsrn999\\new_rep\\blog\\static\\original'),
                                   compress_type=zipfile.ZIP_DEFLATED)
 
     imgzip.close()

@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.new, name='xres'),
     path('', views.new, name='yres'),
+    path('', views.download, name="imgzip")
 ]

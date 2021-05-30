@@ -9,6 +9,11 @@
 <p><cite>{{image}}</cite></p>
 {% endfor %}
 
+<div>
+    <span>첨부파일 :&nbsp;</span>
+    <a href="{% url 'imgzip' %}" >{{download}}</a>
+</div>
+
 <a href="{% url 'home' %}">home</a>
 
 <br>

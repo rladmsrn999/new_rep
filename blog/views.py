@@ -45,7 +45,7 @@ def new(request):
                 im[x,y]=(255,255,255)
             elif x%2==1 and y>=int(yres/2):
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-Vstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/HV.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
@@ -55,7 +55,7 @@ def new(request):
                 im[x,y]=(255,255,255)
             elif y%2==1 and x>=int(xres/2):
                 im[x,y]=(255,255,255)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Half-hstripe.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/HH.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
@@ -79,7 +79,7 @@ def new(request):
         for y in range(yres):
             if (x > int(xres*7/18) and x < int(xres*13/18)) and (y<int(yres/3) or y>int(yres*2/3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk1.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X1.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -87,7 +87,7 @@ def new(request):
         for y in range(yres):
             if (x > int(xres * 11 / 18) and x < int(xres * 17 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk2.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X2.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -95,7 +95,7 @@ def new(request):
         for y in range(yres):
             if (x > int(xres * 5 / 18) and x < int(xres * 11 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk3.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X3.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -103,7 +103,7 @@ def new(request):
         for y in range(yres):
             if (x > int(xres * 1 / 18) and x < int(xres * 7 / 18)) and (y < int(yres / 3) or y > int(yres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk4.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X4.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -111,7 +111,7 @@ def new(request):
         for y in range(yres):
             if (y > int(yres * 7 / 18) and y < int(yres * 13 / 18)) and (x< int(xres / 3) or x > int(xres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk5.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X5.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -119,7 +119,7 @@ def new(request):
         for y in range(yres):
             if (y > int(yres * 11 / 18) and y < int(yres * 17 / 18)) and (x < int(xres / 3) or x > int(xres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk6.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X6.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -127,7 +127,7 @@ def new(request):
         for y in range(yres):
             if (y > int(yres * 5 / 18) and y < int(yres * 11 / 18)) and (x< int(xres / 3) or x > int(xres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk7.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X7.png')
 
     image = Image.new("RGB", (xres, yres), (128, 128, 128))
     im = image.load()
@@ -135,13 +135,13 @@ def new(request):
         for y in range(yres):
             if (y > int(yres * 1 / 18) and y < int(yres * 7 / 18)) and (x < int(xres / 3) or x > int(xres * 2 / 3)):
                 im[x, y] = (0, 0, 0)
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/Xtalk8.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/X8.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
     for x in range(xres):
         for y in range(yres):
-            if x==xres/4 or x==xres/2 or x==xres*3/4 :
+            if x==xres/5 or x==xres/2 or x==xres*4/5 :
                 im[x-3, y] = (255, 255, 255)
                 im[x-2, y] = (255, 255, 255)
                 im[x-1, y] = (255, 255, 255)
@@ -149,7 +149,7 @@ def new(request):
                 im[x+1, y] = (255, 255, 255)
                 im[x+2, y] = (255, 255, 255)
                 im[x+3, y] = (255, 255, 255)
-            if y==yres/4 or y==yres/2 or y==yres*3/4 :
+            if y==yres/5 or y==yres/2 or y==yres*4/5 :
                 im[x, y-3] = (255, 255, 255)
                 im[x, y-2] = (255, 255, 255)
                 im[x, y-1] = (255, 255, 255)
@@ -158,7 +158,7 @@ def new(request):
                 im[x, y+2] = (255, 255, 255)
                 im[x, y+3] = (255, 255, 255)
 
-    image.save('/home/rladmsrn999/new_rep/blog/static/make/LUCU.png')
+    image.save('/home/rladmsrn999/new_rep/blog/static/make/LC.png')
 
     image = Image.new("RGB", (xres, yres), (0, 0, 0))
     im = image.load()
